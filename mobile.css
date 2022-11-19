@@ -1,13 +1,5 @@
 @media only screen and (max-width: 600px) {
-    /* :root {
-        --primary-color: #37C4B9;
-        --secondary-color: #0A3E3F;
-        --accent-color: #D4EDEC;
-    } */
-    body{
-        /* margin: 0;
-        padding: 0; */
-    }
+    
     section{
         padding:5% 15%;
     }
@@ -37,14 +29,6 @@
         font-size: 17px;
 
     }
-    .fixed-social-icon .icons a:hover{
-        background-color: var(--primary-color);
-    }
-    
-    .slider{
-        background-color:  var(--accent-color) ;
-    
-    }
     .short-info{
         min-height: 100vh;
         
@@ -72,7 +56,6 @@
         padding:12px 36px;
         border-radius: 0px;
         font-size: 18px;
-        background-color: var(--secondary-color);
         
     }
     
@@ -81,7 +64,6 @@
         padding:18px 72px;
         border-radius: 0px;
         font-size: 18px;
-        background-color: var(--primary-color);
     }
     .about{
         min-height: 90vh;
@@ -90,9 +72,20 @@
         justify-content: center;
         align-items: center;
     }
+    .about-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .about-img img{
         width:80%;
         margin: 20px 0;
+    }
+    .about-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .works{
         min-height: 90vh;
@@ -100,9 +93,7 @@
         justify-content: center;
         align-items: center;
     }
-    .job-title span{
-        color: var(--secondary-color);
-    }
+    
     .img-sm{
         width:10%;
     }

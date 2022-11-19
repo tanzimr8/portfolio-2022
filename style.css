@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #37C4B9;
-    --secondary-color: #0A3E3F;
+    --primary-color: #0A3E3F;
+    --secondary-color: #37C4B9;
     --accent-color: #D4EDEC;
 }
 body{
@@ -13,7 +13,7 @@ section{
 a{
     text-decoration: none;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 
 }
 .fixed-social-icon{
@@ -29,11 +29,11 @@ a{
     margin: 3px 0px;
     padding: 5px 8px;
     font-size: 18px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: #fff;
 }
 .fixed-social-icon .icons a:hover{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .slider{
@@ -67,7 +67,7 @@ a{
     padding:18px 72px;
     border-radius: 0px;
     font-size: 18px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .btn-tz:hover{
@@ -75,7 +75,7 @@ a{
     padding:18px 72px;
     border-radius: 0px;
     font-size: 18px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 .about{
     min-height: 90vh;
@@ -94,7 +94,7 @@ a{
     align-items: center;
 }
 .job-title span{
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 .img-sm{
     width:10%;
