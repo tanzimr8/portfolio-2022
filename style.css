@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #37C4B9;
+    --secondary-color: #0A3E3F;
+    --accent-color: #D4EDEC;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding:0px 15%;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--secondary-color);
+
+}
+.fixed-social-icon{
+    position: fixed;
+    top:40%;
+    right: 0;
+}
+.fixed-social-icon .icons{
+    display: flex;
+    flex-direction: column;
+}
+.fixed-social-icon .icons a{
+    margin: 3px 0px;
+    padding: 5px 8px;
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.fixed-social-icon .icons a:hover{
+    background-color: var(--primary-color);
+}
+
+.slider{
+    background-color:  var(--accent-color) ;
+
+}
+.short-info{
+    min-height: 100vh;
+    
+    /* color:#fff; */
+}
+.small-txt{
+    color:#000;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.title-name{
+    font-size: 80px;
+}
+.title-job{
+    font-size: 60px;
+}
+.short-intro{
+    font-size: 17px;
+    line-height: 28px;
+    width: 70%;
+}
+.btn-tz{
+    border: 0px;
+    padding:18px 72px;
+    border-radius: 0px;
+    font-size: 18px;
+    background-color: var(--secondary-color);
+}
+
+.btn-tz:hover{
+    border: 0px;
+    padding:18px 72px;
+    border-radius: 0px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+}
+.about{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    width:80%;
+}
+.works{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.job-title span{
+    color: var(--secondary-color);
+}
+.img-sm{
+    width:10%;
+}
+.projects{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects table h3{
+    font-size:18px ;
+}
+.contact{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+.contact-info p{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .about, .works{
+        flex-direction: column;
+    }
+}
