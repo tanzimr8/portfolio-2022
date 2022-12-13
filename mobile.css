@@ -118,20 +118,27 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding:40px;
     }
     .contact-info{
         min-height: 100%;
+        height: 250px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .contact-detail{
+        width:260px;
     }   
     .contact-info p{
         text-align: center;
     }
-    
-    
     .about, .works{
         flex-direction: column;
+    }
+    footer{
+        padding:5px 10px;
     }
 }

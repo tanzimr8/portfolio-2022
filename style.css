@@ -19,7 +19,13 @@ a{
 a:hover{
     color:var(--secondary-color);
 }
-
+.hide{
+    display: none!important;
+}
+.brandify{
+    background: var(--primary-color)!important;
+    color: #fff!important;
+}
 .navbar-brand img{
     max-width: 40px;
     max-height:40px;
@@ -74,7 +80,7 @@ a:hover{
     font-size: 17px;
     line-height: 28px;
     width: 70%;
-}
+}   
 .btn-tz{
     border: 0px;
     padding:18px 72px;
@@ -130,6 +136,9 @@ a:hover{
 .img-sm{
     width:10%;
 }
+#projects{
+    
+}
 .projects{
     min-height: 90vh;
     display: flex;
@@ -141,6 +150,7 @@ a:hover{
     font-size:18px ;
 }
 .contact{
+    background-color: var(--accent-color);
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -149,13 +159,69 @@ a:hover{
 }
 .contact-info{
     min-height: 100%;
+    height:200px;
+    width:400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s ;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     */
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* margin-bottom: 1000px; */
+}
+.contact-info h2{
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.contact-detail{
+    /* word-wrap: break-word; */
+    padding: 5px;
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
 }   
-.contact-info p{
-    text-align: center;
+
+.contact-detail div:nth-child(1){
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+.contact-detail div:nth-child(2){
+    width:80%;
+    margin:0;
+}
+
+.contact-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-icon a i{
+    font-size: 35px;
+    margin: 15px 15px;
+    color:#fff;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+footer p{
+    margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
