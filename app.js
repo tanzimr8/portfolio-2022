@@ -105,7 +105,7 @@ contactInfo.addEventListener('mouseover', ()=>{
   contactInfo.classList.add('brandify');
   contactInfoh2.classList.add('hide');
   contactDetail.forEach((contact)=>{
-    console.log(contact)
+    // console.log(contact)
     contact.classList.add('hide');
   });
   happyTitle.classList.remove('hide');
@@ -115,8 +115,49 @@ contactInfo.addEventListener('mouseout', ()=>{
   contactInfo.classList.remove('brandify');
   contactInfoh2.classList.remove('hide');
   contactDetail.forEach((contact)=>{
-    console.log(contact)
+    // console.log(contact)
     contact.classList.remove('hide');
   });
   happyTitle.classList.add('hide');
 });
+
+// Window Scroll Event
+
+
+const sections = document.querySelectorAll('section');
+const navlinks = document.querySelectorAll('.navbar ul li a');
+// const elem = document.querySelector('#contact');
+// console.log(elem.clientHeight);
+
+window.addEventListener('scroll',()=>{
+  let current = '';
+  sections.forEach((section)=>{
+    // console.log(section.offsetTop);
+    sectionTop = section.offsetTop;
+    sectionHeight = section.clientHeight;
+    if(window.pageYOffset > sectionTop-90){
+      current = section.getAttribute('id');
+    }
+    if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+      current = 'contact';
+     }
+  })
+  navlinks.forEach((nav)=>{
+    nav.classList.remove('nav-active');
+  })
+  navlinks.forEach((nav)=>{
+    nav.classList.remove('nav-active');
+  })
+
+  // console.log(`nav-${current}`)
+  navlinks.forEach((nav)=>{
+    if(nav.classList.contains(`nav-${current}`)){
+      nav.classList.add('nav-active');
+    }
+  })
+
+})
+
+
+
+
