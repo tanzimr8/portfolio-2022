@@ -27,7 +27,12 @@ const projects = [
         title: "Full E-Commerce Website for Lookshop BD",
         techs: "WordPress, WooCommerce",
         link: "https://lookshopbd.com/"
-     }
+     },
+     {
+      title: "Personal Photography Website",
+      techs: "WordPress, Elementor",
+      link: "https://hasnatkiron.com/"
+   }
 ];
 let projectTable = document.querySelector('#projectTable');
 
@@ -159,5 +164,7 @@ window.addEventListener('scroll',()=>{
 })
 
 
-
+//TABBED IMAGE GALLERY
+const img_gallery = document.querySelectorAll('.gallery-image');
+// img_gallery[1].style.display = 'none';
 
