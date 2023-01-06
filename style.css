@@ -33,9 +33,10 @@ a:hover{
     background: var(--primary-color)!important;
     color: #fff!important;
 }
-.navbar-brand img{
-    max-width: 40px;
-    max-height:40px;
+.navbar-brand {
+    border-right:3px solid var(--primary-color) ;
+    padding-right: 10px;
+    font-size: 20px;
 }
 .navbar ul li a{
     font-size: 17px;
